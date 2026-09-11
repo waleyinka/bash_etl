@@ -1,0 +1,2 @@
+2026-09-10 16:48:07 [ERROR] Another instance of etl_pipeline.sh is already running (lock: /tmp/coredata_etl_pipeline.lock). Exiting.
+2026-09-10 16:48:07 [ERROR] Pipeline exited with status 1. See /Users/iamomowale/data/cde_bootcamp/tasks/linux_git/logs/etl_20260910_164807.log for details.

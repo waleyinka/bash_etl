@@ -1,0 +1,19 @@
+2026-09-10 19:04:33 [INFO] Acquired lock /tmp/coredata_etl_pipeline.lock.d (pid 52731)
+2026-09-10 19:04:33 [INFO] Config validated - CSV_URL is set. Moving on.
+2026-09-10 19:04:33 [INFO] ===== STEP 1/3: EXTRACT =====
+2026-09-10 19:04:33 [INFO] Starting EXTRACTION phase from remote source...
+2026-09-10 19:04:34 [INFO] HTTP status check passed (200). Moving on.
+2026-09-10 19:04:34 [INFO] Non-empty check passed. Moving on.
+2026-09-10 19:04:34 [INFO] CSV shape check passed (comma-delimited header found). Moving on.
+2026-09-10 19:04:34 [INFO] CONFIRMED: raw file saved -> /Users/iamomowale/data/cde_bootcamp/tasks/linux_git/raw/annual-enterprise-survey-2023-financial-year-provisional.csv (size: 7.7M, sha256: 1e1b354afb8aa02df7d3bfc89ee2a4318009ce697f651d2cf6ca8ecdf862f38f)
+2026-09-10 19:04:34 [INFO] ===== STEP 2/3: TRANSFORM =====
+2026-09-10 19:04:34 [INFO] Starting TRANSFORMATION phase...
+2026-09-10 19:04:34 [INFO] Raw CSV file already exists at /Users/iamomowale/data/cde_bootcamp/tasks/linux_git/raw/annual-enterprise-survey-2023-financial-year-provisional.csv and is non-empty - moving on.
+2026-09-10 19:04:34 [INFO] Column mapping check passed (Year, Value, Units, Variable_code all found). Moving on.
+2026-09-10 19:04:34 [INFO] Row-count check passed (50986 lines incl. header). Moving on.
+2026-09-10 19:04:35 [INFO] CONFIRMED: transformed file saved -> /Users/iamomowale/data/cde_bootcamp/tasks/linux_git/Transformed/2023_year_finance.csv (50986 lines incl. header)
+2026-09-10 19:04:35 [INFO] ===== STEP 3/3: LOAD =====
+2026-09-10 19:04:35 [INFO] Starting IDEMPOTENT LOAD phase...
+2026-09-10 19:04:35 [INFO] Transformed file already exists at /Users/iamomowale/data/cde_bootcamp/tasks/linux_git/Transformed/2023_year_finance.csv - moving on to load.
+2026-09-10 19:04:35 [ERROR] Failed at line 266: declare -A seen_hashes=()
+2026-09-10 19:04:35 [ERROR] Pipeline exited with status 2. See /Users/iamomowale/data/cde_bootcamp/tasks/linux_git/logs/etl_20260910_190433.log for details.

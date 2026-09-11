@@ -1,0 +1,6 @@
+
+2026-09-10 17:23:06 [INFO] ===== STEP 2/3: TRANSFORM =====
+2026-09-10 17:23:06 [INFO] Starting TRANSFORMATION phase...
+2026-09-10 17:23:06 [INFO] Running data transformation and column mutations...
+2026-09-10 17:23:06 [ERROR] Failed at line 189: awk -F',' 'BEGIN {OFS=","} {if (NR>1) $2=toupper($2); print $1, $2}' "$RAW_FILE" > "$STAGED_TRANSFORMED"
+2026-09-10 17:23:06 [ERROR] Pipeline exited with status 1. See /Users/iamomowale/data/cde_bootcamp/tasks/linux_git/logs/etl_20260910_172304.log for details.
